@@ -17,8 +17,7 @@ function pushRandom (n) {
 function filterOutEven (n) {
 	var array = new Array();
 	array = pushRandom(n);
-	var filterResult = array.filter(function (item){
-											return (item % 2 !== 0);});
+	var filterResult = array.filter(function (item){return (item % 2 !== 0);});
 	return filterResult;
 }
 
