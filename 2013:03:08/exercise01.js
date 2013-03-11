@@ -17,8 +17,7 @@
 	function filterOutOdd (n) {
 		var array = new Array();
 		array = pushArray(n);
-		var filterResult = array.filter(function (item){
-											return (item % 2 === 0);});
+		var filterResult = array.filter(function (item){return (item % 2 === 0);});
 		return filterResult;
 	}
 
@@ -28,8 +27,7 @@
 	function doubleEachEven (n) {
 		var array = new Array();
 		array = filterOutOdd(n);
-		var mapResult = array.map(function (item){
-										return (item * 2);});
+		var mapResult = array.map(function (item){return (item * 2);});
 		return mapResult;
 	}
 
@@ -39,8 +37,7 @@
 	function divisibleByFour (n) {
 		var array = new Array();
 		array = doubleEachEven(n);
-		var filterResult = array.filter(function (item){
-										return (item % 4 === 0);});
+		var filterResult = array.filter(function (item){return (item % 4 === 0);});
 		return filterResult;
 	}
 
@@ -50,8 +47,7 @@
 	function sumRemaining (n) {
 		var array = new Array();
 		array = divisibleByFour(n);
-		var sum = array.reduce(function(prev, cur){
-									return (prev + cur);});
+		var sum = array.reduce(function(prev, cur){return (prev + cur);});
 		return sum;
 	}
 
