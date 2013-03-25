@@ -11,7 +11,7 @@ function Edge (from, to) {
 
 	//exercise02b
 	//a method that compute the length of the edge
-	this.length = function () {
+	Edge.prototype.length = function () {
 			      	return Math.sqrt(Math.pow((this.from.x - this.to.x), 2) + Math.pow((this.from.y - this.to.y), 2));
 				  }
 }
